@@ -1,16 +1,13 @@
-# This is a sample Python script.
+import hashlib
+with open('Git-2.39.2-64-bit.exe', 'rb') as f:
+    hsh = hashlib.md5()
+    while True:
+        data = f.read(2048)
+        if not data:
+            break
+        hsh.update(data)
+    rez = hsh.hexdigest()
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    print(rez)
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    f.read()
