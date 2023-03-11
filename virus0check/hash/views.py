@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):  # HttpRequest
-    return HttpResponse("Hash application page")
+    return render(request, 'index.html')
 
 
 def result(request):

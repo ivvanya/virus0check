@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color:#e1f779 ;
+}
+header{
+	padding-top:10px;
+	width:100%;
+	height:auto;
+	float:left;
+	background-image: url(militar.jpg);
+	margin-bottom:40px;
+}
+.container {
+	width: 1100px;
+	margin: 0 auto;
+	height: auto;
+}
+nav{
+	float: left;
+	width: 880px;
+	margin:20px 0 20px 60px; 
+	height: auto;
+}
+.spiskii{ 
+	float:left; 
+	font-size:20px; 
+	margin-right:50px;   
+	list-style:none;
+	height: auto;
+} 
+.spiskii a{ 
+	color: #00a51b;
+	text-decoration:none; 
+	font-weight:900; 
+	font-family:arial; 
+	text-shadow:0px 0px 4px black;
+	font-size:30px
+}
+.logo{
+	float:left;
+	height:90px;
+	margin-left:90px;
+}
+.ons{
+	float:left;
+	height: auto;
+	margin-bottom:40px;
+	width:100%;
+}
+.ccon{
+	background-color: rgba(113, 232, 132, 0.5);
+	border: 2px dashed black;
+	border-radius:10px;
+	padding:10px 10px 10px 10px;
+	height:auto;
+	float:left;
+}
+h2{
+	float:left;
+	margin-left:60px;
+	font-family:arial;
+	margin-bottom:10px;
+}
+.txt{
+	font-family:arial;
+	font-weight:500; 
+	float:left;
+}
+.nap{
+	float:left;
+	height: auto;
+	margin-bottom:40px;
+	width:100%;
+}
+.sto{
+	width:349px;
+	float:left;
+	height:auto;
+	border: 2px dashed black;
+	margin-right:9px;
+	background-color:#a8d173;
+	border-radius:10px;
+}
+.vpo{
+	width:349px;
+	float:left;
+	height:auto;
+	border: 2px dashed black;
+	margin-right:9px;
+	background-color:#a8d173;
+	border-radius:10px
+}
+.vim{
+	width:348px;
+	float:left;
+	height:auto;
+	border: 2px dashed black;
+	background-color:#a8d173;
+	border-radius:10px
+}
+.kk{
+	float:left;
+	height:auto;
+	width:100%;
+}
+.sp{
+	font-family:arial;
+	font-weight:500; 
+	float:left;
+	margin-left:20px;
+}
+.foto{
+	width:535px;
+	float:left;
+}
+.kon{
+	float:left;
+	width:100%;
+	height:auto;
+	margin-bottom:40px;
+}
+.container2{
+	width: 550px;
+	margin: 0 auto;
+	height: auto;
+}
+.kan{
+	width:100%;
+	height:auto;
+	border: 2px dashed black;
+	border-radius:10px;
+	margin:0 auto;
+	background-color: rgba(113, 232, 132, 0.5);
+	float:left;
+	padding:10px;
+}
+footer{
+	float:left;
+	width:100%;
+	height:auto;
+	background-image: url(militar.jpg);
+}
+.typotext{
+	font-family:arial;
+	font-size:40px;
+	color: #00a51b;
+	text-shadow:0px 0px 4px black;
+	font-weight:900;
+}
+.textk{
+	font-family:arial;
+	font-weight:500; 
+	float:left;
+	color:white;
+	background-color:black;
+	width:100%;
+	padding:10px;
+	border-radius:10px;	
+}
