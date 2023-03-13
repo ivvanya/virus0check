@@ -9,3 +9,5 @@ def index(request):  # HttpRequest
 
 def result(request):
     return HttpResponse("Hash result page")
+
+
