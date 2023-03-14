@@ -1,9 +1,13 @@
 from django.db import models
 
 
-class Post(models.Model):
-    title = models.TextField()
-    cover = models.FileField(upload_to='files/')
+class MD5hashes(models.Model):
+    hash = models.CharField(max_length=32)
 
-    def __str__(self):
-        return self.title
+
+class UploadFiles(models.Model):
+    file = models.FileField(upload_to="files")
+
+
+def __str__(self):
+    return self.title
