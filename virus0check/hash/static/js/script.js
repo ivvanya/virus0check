@@ -1,6 +1,10 @@
-jQuery( "input.wpcf7-form-control.wpcf7-submit" ).click(function() {   
-        var link = document.createElement('a');
-        link.setAttribute('href','http://billgroup.kg/wp-content/uploads/pdf/DeluxeAntalya-Presentation.pdf');
-        link.setAttribute('download','download');
-        link.click();
-    }
+const fileUploader = document.getElementById('file-uploader');
+
+fileUploader.addEventListener('change', (event) => {
+  const files = event.target.files;
+  console.log('files', files);
+
+  const feedback = document.getElementById('feedback');
+  const msg = `File ${files[0].name} uploaded successfully!`;
+  feedback.innerHTML = msg;
+});
