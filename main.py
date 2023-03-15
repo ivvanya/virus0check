@@ -32,3 +32,5 @@ def upload_file(request):
         form = UploadFileForm()
     # Выводим форму загрузки
     return render_to_response('upload.html', {'form': form})
+
+#ветки работайте
