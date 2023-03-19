@@ -1,5 +1,28 @@
 {% block content %}
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+        }
+        #result-block{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+        a{
+            background-color: white;
+            padding: 5;
+            text-decoration: none;
+            color: black;
 
-<h2>{{ result }}</h2>
+        }
+    </style>
+</head>
+<div id="result-block">
+<h3>{{ result }}</h3>
 <a href="{% url 'file_upload_view' %}">Назад</a>
+</div>
 {% endblock %}

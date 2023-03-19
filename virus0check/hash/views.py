@@ -15,9 +15,9 @@ def file_upload_view(request):
             content=file.read()
             md5_hash=md5(content).hexdigest()
             if MalwareHash.objects.filter(hash=md5_hash).exists():
-                return render(request, 'virus0check/result.html', {'result': 'Файл заражен!'})
+                return render(request, 'virus0check/result.html', {'result': 'Файл заражен! :('})
             else:
-                return render(request, 'virus0check/result.html', {'result': 'Файл безопасен'})
+                return render(request, 'virus0check/result.html', {'result': 'Файл безопасен :)'})
     else:
         form=FileUploadForm()
     return render(request, 'virus0check/upload.html', {'form': form})
