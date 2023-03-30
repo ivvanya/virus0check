@@ -4,10 +4,18 @@
 <body>
     <form method="POST" enctype="multipart/form-data">
     <div id="upload-block">
-        <img width="600" src="../../static/images/virus.png" alt="Логотип" />
-        <p>Анализируйте файлы для обнаружение вредоносных программ</p>
+        <img width="1200" src="static/images/virus.png" alt="Логотип" />
+        <p class="text">Анализируйте файлы для обнаружение вредоносных программ</p>
         {% csrf_token %}
-        {{ form.as_p }}
+        <div class="input__wrapper">
+            <div class="spryatat">
+                {{ form.as_p }}
+            </div>
+            <label for="id_file" class="input__file-button">
+                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="static/images/download.png" alt="Выбрать файл" width="25"></span>
+                <span class="input__file-button-text">Выберите файл</span>
+            </label>
+        </div>
         <button id="button-check" type="submit">Проверить файл</button>
     </div>
     </form>
