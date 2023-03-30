@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from hashlib import md5
 from datetime import datetime
-from .fileinfo import get_file_info
+from .FileInfo.ExeInfo import get_exe_info
 from ..forms import FileUploadForm
 from ..models import MalwareHash
 
@@ -20,10 +20,10 @@ def file_upload_func(request):
             md5_hash = md5(content).hexdigest()
             if MalwareHash.objects.filter(hash=md5_hash).exists():
                 return render(request, 'virus0check/result.html', {'result': 'Файл заражен! :(',
-                                                                   'file_info': f'{get_file_info(file_path)}'})
+                                                                   'file_info': f'{get_exe_info(file_path)}'})
             else:
                 return render(request, 'virus0check/result.html', {'result': 'Файл безопасен :)',
-                                                                   'file_info': f'{get_file_info(file_path)}'})
+                                                                   'file_info': f'{get_exe_info(file_path)}'})
     else:
         form = FileUploadForm()
     return render(request, 'virus0check/upload.html', {'form': form})
