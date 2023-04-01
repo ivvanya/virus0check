@@ -3,12 +3,13 @@ from datetime import datetime
 from pefile import PE
 
 
-def get_exe_info(file, verbose: bool = False) -> str:
+def file_exe_info(file, verbose: bool = False) -> str:
     out = str()
     pe = PE(name=file)
     ped = pe.dump_dict()
 
     out += "File Information:\n"
+    out += f"File name: {file}\n"
     if hasattr(pe, 'FileInfo'):
         file_info = {}
         for structure in pe.FileInfo[0]:

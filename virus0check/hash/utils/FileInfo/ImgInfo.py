@@ -7,7 +7,7 @@ def file_img_info(file) -> str:
     out += "File Information:\n"
     image = Image.open(file)
     info_dict = {
-        "Filename": image.filename,
+        "File name": image.filename,
         "Image Size": image.size,
         "Image Height": image.height,
         "Image Width": image.width,

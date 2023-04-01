@@ -5,7 +5,9 @@
     <div id="result-block">
         <div class="result">{{ result }}</div>
         <div class="file_info">{{ file_info|linebreaks }}</div>
-    <a href="{% url 'file_upload_view' %}">Назад</a>
+        <div class="button_ref">
+            <a href="{% url 'file_upload_view' %}">Назад</a>
+        </div>
     </div>
 </body>
 
