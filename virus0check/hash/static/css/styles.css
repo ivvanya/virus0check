@@ -15,7 +15,7 @@ body{
     margin-top: 0;
 }
 
-p{
+.text{
     font-family: "Gill Sans", sans-serif;
     font-size: 30;
 }
@@ -30,6 +30,7 @@ p{
     box-shadow: none;
     padding: 1%;
     color: RGB(255,255,255);
+    cursor: pointer;
 }
 
 .input__wrapper {
@@ -87,4 +88,17 @@ p{
     border-radius: 10px;
     cursor: pointer;
     margin: 0 auto;
+}
+
+.file_info {
+    font-size: 16;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 20;
 }
